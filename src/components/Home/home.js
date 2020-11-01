@@ -1,11 +1,14 @@
 import './home.css';
+import { Redirect } from 'react-router-dom'
+import React from "react";
 
-function Home() {
-  return (
-    <div className="home">
-     <p>HOLA MUNDO, ESTE ES EL HOME</p>
-    </div>
-  );
+class home extends React.Component {
+
+constructor(props) {}
+
+  render() {   
+    return <Redirect to='/home' />;
+  }
 }
 
-export default Home;
+export default home;
